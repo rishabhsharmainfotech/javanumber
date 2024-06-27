@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_rrrrr">
+
+    <FrameLayout
+        android:id="@+id/rrrrr_mViewPagerFrame_rrrrr"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="3dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/rrrrr_mViewPager_rrrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/green_rrrrr" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rrrrr_stripLayout_rrrrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rrrrr_mViewPagerFrame_rrrrr"
+        android:background="@color/primary_theme_start_rrrrr"
+        android:elevation="1dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/rrrrr_text_marque_rrrrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black_rrrrr"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rrrrr_aaa_rrrrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rrrrr_stripLayout_rrrrr"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="6dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rrrrr_whatsapp_item_rrrrr"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/dark_border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@drawable/main_gradient_background2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/rrrrr_a2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/whatsapp_logo2" />
+
+                <TextView
+                    android:id="@+id/rrrrr_whats_app_n"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="WHATSAPP"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_rrrrr"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="12sp"
+                    app:autoSizeMinTextSize="10dp"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rrrrr_starline_item_rrrrr"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dark_border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@drawable/main_gradient_background2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/rrrrr_a5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_star"
+                    app:tint="@color/yellow_rrrrr" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/rrrrr_a5"
+                    android:gravity="center"
+                    android:text="STARLINE"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_rrrrr"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="12sp"
+                    app:autoSizeMinTextSize="10dp"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rrrrr_addpoints_item_rrrrr"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dark_border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@drawable/main_gradient_background2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/rrrrr_a3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    android:src="@drawable/add_point" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ADD POINTS"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_rrrrr"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="12sp"
+                    app:autoSizeMinTextSize="10dp"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rrrrr_galli_item_rrrrr"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dark_border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@drawable/main_gradient_background2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/rrrrr_a6"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_withdraw2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Witihdraw"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_rrrrr"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="12sp"
+                    app:autoSizeMinTextSize="10dp"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rrrrr_aaa_rrrrr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rrrrr_recyclerView_rrrrr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                tools:listitem="@layout/turnament_layout" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/rrrrr_progressBar_rrrrr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

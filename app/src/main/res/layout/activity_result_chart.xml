@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_rrrrr"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.e.b.activity_result_chart">
+    <!-- Put Invisible Layout Here  -->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rrrrr_appbarLayout"
+        android:layout_alignParentTop="true">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/rrrrr_toolbar_rrrrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/black_rrrrr"
+            android:background="@drawable/main_gradient_background"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="@string/chart_rrrrr"
+            app:contentInsetStartWithNavigation="0dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rrrrr_dataConText_rrrrr"
+        android:text="@string/no_net_rrrrr"
+        android:textColor="@color/white_rrrrr"
+        android:background="@color/warn_red_rrrrr"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_below="@id/rrrrr_appbarLayout"
+        android:elevation="1dp"/>
+
+    <WebView
+        android:id="@+id/rrrrr_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rrrrr_dataConText_rrrrr" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rrrrr_progressBar_rrrrr"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/rrrrr_home"
+        android:icon="@drawable/home"
+        android:orderInCategory="1"
+        android:title="@string/dashboard_rrrrr" />
+    <item
+        android:id="@+id/rrrrr_seeFullProfile_rrrrr"
+        android:icon="@drawable/person"
+        android:orderInCategory="2"
+        android:title="@string/full_profile_rrrrr"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/rrrrr_addFunds_rrrrr"
+        android:icon="@drawable/add_fu"
+        android:orderInCategory="3"
+        android:title="@string/add_funds_rrrrr"
+        android:visible="false" />
+    <item
+        android:id="@+id/rrrrr_withdrawPoints_rrrrr"
+        android:icon="@drawable/transfer_points1"
+        android:orderInCategory="4"
+        android:title="@string/coins_withdraw_rrrrr"
+        android:visible="false" />
+    <item
+        android:id="@+id/rrrrr_walletStatement_rrrrr"
+        android:icon="@drawable/wallet"
+        android:orderInCategory="5"
+        android:title="@string/wallet_statement_rrrrr"
+        android:visible="false" />
+    <item
+        android:id="@+id/rrrrr_transferPoints_rrrrr"
+        android:icon="@drawable/transfer_points1"
+        android:orderInCategory="6"
+        android:title="@string/transfer_points_rrrrr"
+        android:visible="false" />
+    <item
+        android:id="@+id/rrrrr_winHistory_rrrrr"
+        android:icon="@drawable/rate1"
+        android:orderInCategory="8"
+
+        android:title="@string/win_his_rrrrr"
+        android:visible="false" />
+    <item
+        android:id="@+id/rrrrr_bidHistory_rrrrr"
+        android:icon="@drawable/bid_history1"
+        android:orderInCategory="7"
+        android:title="@string/bid_his_rrrrr"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/rrrrr_game_values_rrrrr"
+        android:icon="@drawable/rate1"
+        android:orderInCategory="9"
+        android:title="@string/rates_rrrrr"
+        android:visible="false" />
+    <item
+        android:id="@+id/rrrrr_how_to_learn_rrrrr"
+        android:icon="@drawable/how_to_play"
+        android:orderInCategory="10"
+        android:title="@string/how_play_rrrrr"
+        android:visible="false" />
+    <item
+        android:id="@+id/rrrrr_contactUs_rrrrr"
+        android:icon="@drawable/how_to_play"
+        android:orderInCategory="11"
+        android:title="@string/contact_us_rrrrr"
+        android:visible="false" />
+    <item
+        android:id="@+id/rrrrr_shareWithFriends"
+        android:icon="@drawable/share1"
+        android:orderInCategory="12"
+        android:title="@string/share_friends_rrrrr" />
+    <item
+        android:id="@+id/rrrrr_rateApp"
+        android:icon="@drawable/star_rate"
+        android:orderInCategory="13"
+        android:title="@string/app_rates_rrrrr" />
+    <item
+        android:id="@+id/rrrrr_changePassword_rrrrr"
+        android:icon="@drawable/change_password1"
+        android:orderInCategory="14"
+        android:title="@string/change_pass_rrrrr"
+        android:visible="false" />
+    <item
+        android:id="@+id/rrrrr_logout_rrrrr"
+        android:icon="@drawable/logout"
+        android:orderInCategory="15"
+        android:title="@string/signout_rrrrr" />
+
+
+</menu>

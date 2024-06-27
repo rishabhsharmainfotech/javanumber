@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_rrrrr"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.e.b.activity_upi_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/rrrrr_appbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/rrrrr_toolbar_rrrrr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_gradient_background"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+                app:title="UPI Details"
+                app:titleTextColor="@color/black_rrrrr" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/rrrrr_dataConText_rrrrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/warn_red_rrrrr"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/no_net_rrrrr"
+            android:textColor="@color/white_rrrrr"
+            android:visibility="gone" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="@color/golden_color"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@drawable/main_gradient_background2"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number_rrrrr"
+                    android:textColor="@color/black_rrrrr"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/rrrrr_in_txt_upi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:background="@drawable/rounded_edittext_focused2"
+                    android:hint="@string/phone_number_rrrrr"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black_rrrrr"
+                    android:textColorHint="@color/black_rrrrr"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/card_background"
+                    android:backgroundTint="@color/button_color1_rrrrr"
+                    android:gravity="center"
+                    android:onClick="sUp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/push_rrrrr"
+                    android:textColor="@color/black_rrrrr"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/rrrrr_progressBar_rrrrr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

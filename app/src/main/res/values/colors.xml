@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500_rrrrr">#FF4F1515</color>
+    <color name="purple_700_rrrrr">#b57428</color>
+    <!-- status bar color -->
+    <color name="teal_200_rrrrr">#270015</color>
+    <!-- toolbar color -->
+    <color name="teal_700_rrrrr">#FF018786</color>
+    <color name="black_rrrrr">#FFFFFFFF</color>
+    <color name="white_rrrrr">#FF000000</color>
+    <color name="transparent_rrrrr">#00000000</color>
+    <color name="red_rrrrr">#FF0000</color>
+    <color name="green_rrrrr">#02AF00</color>
+    <color name="warn_red_rrrrr">#ec5645</color>
+    <color name="sky_rrrrr">#dddde5</color>
+    <color name="yellow_rrrrr">#F6BE00</color>
+    <color name="edittextcolor_rrrrr">#ffffff</color>
+    <color name="btn_txt_rrrrr">#ffffff</color>
+    <color name="txt_view_rrrrr">#ffffff</color>
+    <color name="sec_box_rrrrr">#ffffff</color>
+    <color name="card_back_rrrrr">#270015</color>
+    <color name="btn_rrrrr">#ffffff</color>
+    <color name="btn_txt2_rrrrr">#ffffff</color>
+    <color name="status_bar_color_rrrrr">#052F55</color>
+    <color name="primary_theme_start_rrrrr">#172643</color>
+    <color name="primary_theme_center_rrrrr">#052F55</color>
+    <color name="primary_theme_end_rrrrr">#172643</color>
+    <color name="logo_bg_rrrrr">#1D4155</color>
+    <color name="icon__rrrrr">#000000</color>
+    <color name="drawer_menu_bg_rrrrr">#FFFFFF</color>
+    <color name="drawer_menu_text_rrrrr">#000000</color>
+    <color name="button_color1_rrrrr">#86961C</color>
+    <color name="starline_desawar_list_bg_rrrrr">#F3F2F2</color>
+    <color name="starline_desawar_list_heading_rrrrr">#368AB1</color>
+    <color name="matka_darkblue2_rrrrr">#0F3347</color>
+    <color name="golden_color">#EEBF6D</color>
+
+</resources>

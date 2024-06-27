@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    package="com.example.myapplication">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+
+        android:allowBackup="true"
+        android:forceDarkAllowed="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name_rrrrr"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyTheme_rrrrr"
+        android:usesCleartextTraffic="true"
+
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:node="merge"
+        tools:targetApi="m">
+
+
+        <activity
+            android:name="com.example.myapplication.e.b.activity_wallet_statement"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_starline_home"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_starline_turnament"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_bid_place"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_turnament"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_contact_support"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_game_rates_and_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_win_history"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_user_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_result_chart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_upi_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_add_bank_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_withdraw"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_add_funds"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_security_pin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_security_pin_for_withdraw"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_change_password"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_forget_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_verifying"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_registration"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_sign_in"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_welcome"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.myapplication.e.b.activity_dashboard"
+            android:forceDarkAllowed="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_transfer_coins"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_starline_bid_place"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_verify_otp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_desawar_bid_place"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_desawar_turnament"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.myapplication.e.b.activity_disawar_home"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.example.myapplication.e.a.cc"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

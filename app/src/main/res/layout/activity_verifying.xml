@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.com.example.myapplication.e.b.activity_verifying"
+    android:background="@drawable/main_gradient_background">
+
+    <!-- Put Invisible Layout Here  -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rrrrr_dataConText_rrrrr"
+        android:text="@string/no_net_rrrrr"
+        android:textColor="@color/white_rrrrr"
+        android:background="@color/warn_red_rrrrr"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:elevation="1dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@color/transparent_rrrrr"
+                app:cardCornerRadius="80dp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/rrrrr_mtv_activity_rrrrr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/signup_rrrrr"
+                android:textColor="@color/btn_txt_rrrrr"
+                android:textSize="25sp" />
+            <RelativeLayout
+                android:id="@+id/rrrrr_rl_pass_rrrrr"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_edittext_focused">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/rrrrr_in_pass_rrrrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent_rrrrr"
+                    android:drawableStart="@drawable/ic_lock_icon_01"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="@color/edittextcolor_rrrrr"
+                    android:hint="@string/pass_rrrrr"
+                    android:inputType="textWebPassword"
+                    android:maxLength="18"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/edittextcolor_rrrrr"
+                    android:textColorHint="@color/edittextcolor_rrrrr"
+                    android:textCursorDrawable="@drawable/ic_cursor"
+                    android:textStyle="bold"
+                    tools:targetApi="m" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/rrrrr_pass_toggle_rrrrr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:onClick="passToggle"
+                    android:src="@drawable/ic_baseline_visibility_24"
+                    android:tint="@color/edittextcolor_rrrrr" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rrrrr_rl_pin_rrrrr"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_edittext_focused">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/rrrrr_in_pc_rrrrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent_rrrrr"
+                    android:drawableStart="@drawable/ic_lock_icon_01"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="@color/edittextcolor_rrrrr"
+                    android:hint="@string/enter_pin_rrrrr"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/edittextcolor_rrrrr"
+                    android:textColorHint="@color/edittextcolor_rrrrr"
+                    android:textCursorDrawable="@drawable/ic_cursor"
+                    android:textStyle="bold"
+                    tools:targetApi="m" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/rrrrr_pass_tpc_rrrrr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:onClick="passTogglePin"
+                    android:src="@drawable/ic_baseline_visibility_24"
+                    android:tint="@color/edittextcolor_rrrrr" />
+            </RelativeLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/button_color1_rrrrr"
+                android:onClick="submit"
+                android:paddingVertical="12dp"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_txt_rrrrr"
+                android:textSize="18sp"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@+id/rrrrr_progressBar_rrrrr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/edittextcolor_rrrrr"
+        android:visibility="gone"/>
+</RelativeLayout>

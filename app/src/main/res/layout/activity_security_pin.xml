@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_gradient_background"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.e.b.activity_security_pin">
+
+    <!-- Put Invisible Layout Here  -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rrrrr_dataConText_rrrrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warn_red_rrrrr"
+        android:elevation="1dp"
+        android:padding="5dp"
+        android:text="@string/no_net_rrrrr"
+        android:textColor="@color/white_rrrrr"
+        android:visibility="gone" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/transparent_rrrrr"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rrrrr_checkBoxLay_rrrrr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"
+        android:text="@string/enter_security_pin_rrrrr"
+        android:textColor="@color/txt_view_rrrrr"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/rrrrr_checkBoxLay_rrrrr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rrrrr_keyboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:animateLayoutChanges="true"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rrrrr_checkBox1_rrrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:clickable="false"
+            android:minWidth="0dp"
+            android:theme="@style/MyCheckBox" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rrrrr_checkBox2_rrrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:animateLayoutChanges="true"
+            android:clickable="false"
+            android:minWidth="0dp"
+            android:theme="@style/MyCheckBox" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rrrrr_checkBox3_rrrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:clickable="false"
+            android:minWidth="0dp"
+            android:theme="@style/MyCheckBox" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rrrrr_checkBox4_rrrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:animateLayoutChanges="true"
+            android:clickable="false"
+            android:minWidth="0dp"
+            android:theme="@style/MyCheckBox" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rrrrr_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rrrrr_resetPin"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button1"
+                android:orientation="vertical"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_1_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button2"
+                android:orientation="vertical"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_2_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button3"
+                android:orientation="vertical"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_3_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button4"
+                android:orientation="vertical"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_4_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button5"
+                android:orientation="vertical"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_5_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button6"
+                android:orientation="vertical"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_6_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button7"
+                android:orientation="vertical"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_7_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button8"
+                android:orientation="vertical"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_8_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button9"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_9_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btnClear_rrrrr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="btnClr"
+                android:visibility="invisible"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rrrrr_textClear_rrrrr"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text="@string/clear_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btn0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="button0"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="@string/digit_0_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rrrrr_btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="btnDlt"
+                tools:ignore="OnClick,UsingOnClickInXml">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text="@string/remove_rrrrr"
+                    android:textColor="@color/txt_view_rrrrr" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rrrrr_resetPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="resetPin"
+        android:padding="10dp"
+        android:text="@string/pin_reset_rrrrr"
+        android:textColor="@color/txt_view_rrrrr" />
+
+    <ProgressBar
+        android:id="@+id/rrrrr_progressBar_rrrrr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/edittextcolor_rrrrr"
+        android:visibility="gone" />
+</RelativeLayout>

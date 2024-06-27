@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_rrrrr"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.e.b.activity_desawar_bid_place">
+
+    <!-- Put Invisible Layout Here  -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/rrrrr_appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/rrrrr_tool_bar_rrrrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_theme_start_rrrrr"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:titleTextColor="@color/black_rrrrr" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rrrrr_internet_text_rrrrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warn_red_rrrrr"
+        android:elevation="1dp"
+        android:padding="5dp"
+        android:text="@string/no_net_rrrrr"
+        android:textColor="@color/white_rrrrr"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/rrrrr_ll_bid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="@string/choose_date_rrrrr"
+                android:textColor="@color/white_rrrrr"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/rrrrr_choose_date_rrrrr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/rounded_edittext_focused"
+                android:hint="@string/choose_date_rrrrr"
+                android:padding="10dp"
+                android:textColor="@color/white_rrrrr"
+                android:textColorHint="@color/white_rrrrr"
+                android:textSize="16sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/rrrrr_digText_rrrrr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingVertical="10dp"
+                android:text="@string/digits_rrrrr"
+                android:textColor="@color/white_rrrrr"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/rrrrr_input_d_rrrrr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/rounded_edittext_focused"
+                android:hint="@string/enter_digits_rrrrr"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/white_rrrrr"
+                android:textColorHint="@color/white_rrrrr" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/rrrrr_openCD_rrrrr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingVertical="10dp"
+                android:text="@string/digits_rrrrr"
+                android:textColor="@color/white_rrrrr"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/rrrrr_inputCD_rrrrr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/rounded_edittext_focused"
+                android:hint="@string/enter_digits_rrrrr"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/white_rrrrr"
+                android:textColorHint="@color/white_rrrrr"
+                android:visibility="gone" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingVertical="10dp"
+                android:text="@string/points_rrrrr"
+                android:textColor="@color/white_rrrrr"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rrrrr_edit_text_coins_rrrrr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/rounded_edittext_focused"
+                android:hint="@string/enter_points_rrrrr"
+                android:inputType="number"
+                android:maxLength="9"
+                android:padding="10dp"
+                android:textColor="@color/white_rrrrr"
+                android:textColorHint="@color/white_rrrrr" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rrrrr_btn_proceed_rrrrr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/button_color1_rrrrr"
+                android:gravity="center"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="11dp"
+                android:text="@string/proceed_rrrrr"
+                android:textAllCaps="false"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rrrrr_recyclerView_rrrrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rrrrr_ll_bid_bottom_rrrrr"
+            android:layout_below="@+id/rrrrr_ll_bid"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            tools:listitem="@layout/starline_playing_layout" />
+
+        <LinearLayout
+            android:id="@+id/rrrrr_ll_bid_bottom_rrrrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/rrrrr_mtv_total_coins_rrrrr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Total Points : 0"
+                android:textColor="@color/white_rrrrr"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rrrrr_pro_conf_rrrrr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red_rrrrr"
+                android:gravity="center"
+                android:onClick="proceedConformBtn"
+                android:paddingHorizontal="5dp"
+                android:text="@string/proceed1_rrrrr"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/rrrrr_progress_bar_rrrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

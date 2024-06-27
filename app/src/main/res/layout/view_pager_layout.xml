@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- Put Invisible Layout Here  -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rrrrr_viewPagerImage"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:background="@color/black_rrrrr"/>
+</LinearLayout>

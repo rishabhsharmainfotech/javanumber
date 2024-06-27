@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_rrrrr"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.e.b.activity_wallet_statement">
+
+    <!-- Put Invisible Layout Here  -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/rrrrr_appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/rrrrr_toolbar_rrrrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_gradient_background"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Wallet Statement"
+            app:titleTextColor="@color/black_rrrrr" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/rrrrr_swipe_ref_lyt_rrrrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/button_color1_rrrrr"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/main_gradient_background2"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/rrrrr_ptsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/rounded_corner_black"
+                        android:backgroundTint="@color/button_color1_rrrrr"
+                        android:gravity="center"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="6dp"
+                        android:text="@string/wallet_points_rrrrr"
+                        android:textColor="@color/black_rrrrr"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/rrrrr_coins_rrrrr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_toEndOf="@id/rrrrr_ptsText"
+                        android:textColor="@color/black_rrrrr"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/rrrrr_withd_ot_rrrrr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rrrrr_ptsText"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Withdraw Open time"
+                        android:textColor="@color/black_rrrrr"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/rrrrr_withd_ct_rrrrr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rrrrr_withd_ot_rrrrr"
+                        android:text="Withdraw Close time"
+                        android:textColor="@color/black_rrrrr"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/rrrrr_minWithdCoins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rrrrr_withd_ct_rrrrr"
+                        android:layout_marginVertical="5dp"
+                        android:text="Minimum withdrawal points"
+                        android:textColor="@color/black_rrrrr"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/rrrrr_add_withdraw1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rrrrr_withdraw_item1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_background"
+                    android:backgroundTint="@color/button_color1_rrrrr"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/rrrrr_a61"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_withdraw2"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_toEndOf="@id/rrrrr_a61"
+                        android:gravity="center"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:text="WITHDRAW"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_rrrrr"
+                        android:textStyle="bold"
+                        app:autoSizeMaxTextSize="16sp"
+                        app:autoSizeMinTextSize="10dp"
+                        app:autoSizeTextType="uniform" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rrrrr_addpoints_item1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_background"
+                    android:backgroundTint="@color/button_color1_rrrrr"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/rrrrr_a3"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/add_point"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_toEndOf="@id/rrrrr_a3"
+                        android:gravity="center"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:text="ADD FUNDS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_rrrrr"
+                        android:textStyle="bold"
+                        app:autoSizeMaxTextSize="16sp"
+                        app:autoSizeMinTextSize="10dp"
+                        app:autoSizeTextType="uniform" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rrrrr_recyclerViewWallet_rrrrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    tools:listitem="@layout/purse_layout" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

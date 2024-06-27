@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rrrrr_drawerLayout_rrrrr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_rrrrr"
+    tools:context="com.example.myapplication.e.b.activity_dashboard"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/rrrrr_appbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_rrrrr">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/rrrrr_toolbar_rrrrr"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_top"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:menu="@menu/top_right_wallet_menu"
+                app:navigationIcon="@drawable/hamburger"
+                app:popupTheme="@style/MyDarkToolbarStyle"
+                app:title="@string/app_name_rrrrr"
+                app:titleTextColor="@color/black_rrrrr" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/rrrrr_tabs_rrrrr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_gradient_background"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/white_rrrrr" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/rrrrr_dataConText_rrrrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rrrrr_appbarLayout"
+            android:background="@color/warn_red_rrrrr"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/no_net_rrrrr"
+            android:textColor="@color/white_rrrrr"
+            android:visibility="gone" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/rrrrr_swipe_ref_lyt_rrrrr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rrrrr_dataConText_rrrrr">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.myapplication.e.c.df
+                    android:id="@+id/rrrrr_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <include layout="@layout/content_dashboard" />
+
+                <ProgressBar
+                    android:id="@+id/rrrrr_progressBar_rrrrr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/rrrrr_navigationView_rrrrr"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/black_rrrrr"
+        app:headerLayout="@layout/drawer_menu_header"
+        app:menu="@menu/drawer_menu"
+        app:theme="@style/NavigationDrawerStyle" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
